@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +19,7 @@
               colors: {
                 clifford: '#da373d',
                 'primary-bg': '#1DD100',
+                'secondary-bg': '#F7F8F8',
               }
             }
           }
@@ -72,7 +73,7 @@
               <div class="max-w-[44rem]">
                 <h1 class="mb-5 text-3xl md:leading-[4rem] lg:leading-[86px] md:text-[64px] font-bold text-white">End-to-End Travel With <br><span class="text-primary-bg">S Paribahan</span></h1>
                 <p class=" mb-8 max-w-xl mx-auto">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
-                <button class="btn bg-primary-bg hover:bg-transparent hover:text-white hover:border-primary-bg hover:border border-primary-bg"><a href="#buyNow">Buy Tickets</a></button>
+                <button class="btn bg-primary-bg hover:bg-transparent hover:text-white hover:border-primary-bg hover:border border-primary-bg text-xl font-bold"><a href="#ticket-page">Buy Tickets</a></button>
               </div>
             </div>
           </div>
@@ -106,8 +107,54 @@
     </header>
     
     <!-- Main section here -->
-    <main>
+    <main class="container max-w-[1440px] mx-auto">
+        <!-- offer section -->
+        <div class=" container px-5 mx-auto lg:px-[135px]">
+            <section class="mt-20 md:mt-28">
+                <h2 class="text-3xl md:text-[40px] font-raleway font-bold text-center mb-6 md:mb-12">Best offers for you</h2>
+                 <!-- Ticket card container  -->
+                 <div class="flex justify-center gap-4 flex-col lg:flex-row font-inter">
+                    <!-- Ticket card-1 -->
+                     <div class="flex justify-evenly items-center gap-1 rounded-3xl bg-[#FFBF0F]  mb-4 lg:mb-0">
+                        <div class="flex p-[8%] md:p-10 lg:p-12 max-w-xl border-r-[3px] border-dashed border-white relative before:absolute before:block before:w-9 before:h-9 before:bg-white before:rounded-full before:-right-[19px] after:absolute after:block after:w-9 after:h-9 after:bg-white after:rounded-full after:-right-[19px] before:-top-5 after:-bottom-5"">
+                            <div class="max-w-52 text-[#352C11]">
+                                <h2 class="font-black text-2xl  md:text-4xl">15% OFF</h2>
+                                <p class="text-[#352C11] text-xs md:text-xl">on your next purchase</p>
+                                <p class="text-[#816310] text-xs md:text-xl">use by January 2024</p>
+                            </div>
+                        </div>
+                        <div class="p-[8%] md:p-10 lg:p-[52px]">
+                            <div>
+                                <h2 class="font-raleway text-[#030712] text-3xl font-bold">NEW15</h2>
+                                <p class=" text-[#352C11] text-xs md:text-x font-medium ">Coupon Code</p>
+                            </div>
+                        </div>
+                     </div>
 
+                     <!-- Ticket card-2 -->
+                     <div class="flex justify-evenly items-center rounded-3xl gap-1 bg-[#F78C9C]">
+                        <div class="flex p-[8%] md:p-10 lg:p-[52px] max-w-xl border-r-[3px] border-dashed border-white relative before:absolute before:block before:w-9 before:h-9 before:bg-white before:rounded-full before:-right-[19px] after:absolute after:block after:w-9 after:h-9 after:bg-white after:rounded-full after:-right-[19px] before:-top-5 after:-bottom-5" >
+                            <div class="max-w-52">
+                                <h2 class="font-black text-[#33222D] text-2xl md:text-4xl ">20% OFF</h2>
+                                <p class="text-[#33222D] 2xl  text-xs md:text-xl">on your next purchase</p>
+                                <p class="text-[#7D4957]  font-medium  text-xs md:text-xl">use by January 2024</p>
+                            </div>
+                        </div>
+                        <div class="p-[8%] md:p-10 lg:p-[52px]">
+                            <div>
+                                <h2 class="font-raleway text-[#030712] text-2xl md:text-4xl font-bold">Couple 20</h2>
+                                <p class=" text-[#352C11] text-xs md:text-x font-medium ">Coupon Code</p>
+                            </div>
+                        </div>
+                     </div>
+
+                 </div>
+
+                 <div class="text-center mt-16">
+                    <button class="btn bg-white hover:bg-primary-bg hover:text-white border-primary-bg text-primary-bg text-xl font-bold justify-center items-center"><a href="">See All Offers</button>
+                 </div>
+            </section>
+        </div>
     </main>
     <!-- Footer section -->
     <footer>
