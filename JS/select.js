@@ -1,4 +1,4 @@
-var totalCount = 16;
+var totalCount = 40;
         var selectedCount = 0;
 
         function buttonClick(button) {
