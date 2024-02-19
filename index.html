@@ -158,14 +158,14 @@
         </div>
         <!-- Ticket buy container -->
         <div class="mt-14 md:mt-28 min-h-96 bg-secondary-bg rounded-t-[44px] md:rounded-t-[88px] border-t-2 border-primary-bg px-5 lg:px-[135px] pt-11 lg:pt-24 pb-16 lg:pb-28">
-          <!-- PH Paribahan section -->
+          <!-- Paribahan section -->
           <section class="mb-14">
             <h1 class="font-raleway font-bold text-3xl md:text-[40px] text-center">Strawberry Paribahan</h1>
             <p class="max-w-[736px] text-[#65676E] font-inter font-normal text-xs md:text-xl text-center mx-auto mt-4 lg:mt-6 mb-6 lg:mb-12">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined.</p>
             <!-- Greenline Paribahan Container -->
             <div class=" flex flex-wrap flex-col md:flex-row items-center justify-center lg:justify-start gap-6 rounded-3xl bg-white p-4 md:p-8">
               <!-- Route section -->
-              <div>
+              <div class=" md:border-r-2 md:border-dashed md:pr-5">
                 <!-- Route heading section -->
                 <div class="flex justify-between">
                   <div class="flex flex-1 max-w-[412px] items-center gap-2 md:gap-4">
@@ -176,7 +176,7 @@
                   <!-- Seats left section -->
                   <div class="flex items-center gap-2 px-2 md:px-[17px] py-[14px] bg-[#E8FAE5] rounded-xl">
                     <figure><img src="images/seat-green.png" alt=""></figure>
-                    <p class="text-primary-bg text-xs md:text-[18px] font-medium "><span>40 </span>Seats left</p>
+                    <p class="text-primary-bg text-xs md:text-[18px] font-medium "><span id="totalCount">16</span>Seats left</p>
                   </div>    
                 </div>
                 <!-- Route main section -->
@@ -203,7 +203,7 @@
             <!-- column content -->
             <div class="flex flex-col lg:flex-row gap-4">
                   <!-- Column-1 -->
-            <div>
+            <div class="md:border-r-2 md:border-dashed md:pr-4">
               <h2 class="font-raleway font-semibold text-2xl mb-6">Select Your Seat</h2>
               <div class="flex justify-between border-y border-dashed py-4 mb-6">
                 <div class="flex gap-1">
@@ -217,58 +217,142 @@
                 <figure class="flex justify-end"><img class="bg-[#E5E6E7] px-10 py-3 rounded-xl" src="images/steering-wheel.svg" alt=""></figure>
               </div>
               <!-- seat items A -->
-              <div class="flex flex-wrap items-center">
+              <div class="flex flex-wrap items-center lg:justify-around">
                 <span class="mr-6 pt-4">A</span>
                 <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
                   <div class="flex ">
-                    <button class="btn px-11 py-4 mr-6">A1</button>
-                    <button class="btn px-11 py-4">A2</button>
+                    <button onclick="buttonClick(this)" class="button btn clicked-bg-red-400 px-11 py-4 mr-6">A1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">A2</button>
                   </div>
                   <div class="flex">
-                    <button class="btn px-11 py-4 mr-6">A3</button>
-                    <button class="btn px-11 py-4">A4</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">A3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">A4</button>
                   </div>
                 </div>
               </div>
               <!-- seat items B -->
-              <div class="flex flex-wrap items-center">
+              <div class="flex flex-wrap items-center lg:justify-around">
                 <span class="mr-6 pt-4">B</span>
                 <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
                   <div class="flex ">
-                    <button class="btn px-11 py-4 mr-6">B1</button>
-                    <button class="btn px-11 py-4">B2</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">B1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">B2</button>
                   </div>
                   <div class="flex">
-                    <button class="btn px-11 py-4 mr-6">B3</button>
-                    <button class="btn px-11 py-4">B4</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">B3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">B4</button>
                   </div>
                 </div>
               </div>
               <!-- seat items C -->
-              <div class="flex flex-wrap items-center">
+              <div class="flex flex-wrap items-center lg:justify-around">
                 <span class="mr-6 pt-4">C</span>
                 <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
                   <div class="flex ">
-                    <button class="btn px-11 py-4 mr-6">C1</button>
-                    <button class="btn px-11 py-4">C2</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">C1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">C2</button>
                   </div>
                   <div class="flex">
-                    <button class="btn px-11 py-4 mr-6">C3</button>
-                    <button class="btn px-11 py-4">C4</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">C3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">C4</button>
                   </div>
                 </div>
               </div>
               <!-- seat items D -->
-              <div class="flex flex-wrap items-center">
+              <div class="flex flex-wrap items-center lg:justify-around">
                 <span class="mr-6 pt-4">D</span>
                 <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
                   <div class="flex ">
-                    <button class="btn px-11 py-4 mr-6">D1</button>
-                    <button class="btn px-11 py-4">D2</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">D1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">D2</button>
                   </div>
                   <div class="flex">
-                    <button class="btn px-11 py-4 mr-6">D3</button>
-                    <button class="btn px-11 py-4">D4</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">D3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">D4</button>
+                  </div>
+                </div>
+              </div>
+              <!-- seat items E -->
+              <div class="flex flex-wrap items-center lg:justify-around">
+                <span class="mr-6 pt-4">E</span>
+                <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
+                  <div class="flex ">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">E 1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">E 2</button>
+                  </div>
+                  <div class="flex">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">E 3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">E 4</button>
+                  </div>
+                </div>
+              </div>
+              <!-- seat items F -->
+              <div class="flex flex-wrap items-center lg:justify-around">
+                <span class="mr-6 pt-4">F</span>
+                <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
+                  <div class="flex ">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">F 1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">F 2</button>
+                  </div>
+                  <div class="flex">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">F 3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">F 4</button>
+                  </div>
+                </div>
+              </div>
+              <!-- seat items G -->
+              <div class="flex flex-wrap items-center lg:justify-around">
+                <span class="mr-6 pt-4">G</span>
+                <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
+                  <div class="flex ">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">G1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">G2</button>
+                  </div>
+                  <div class="flex">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">G3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">G4</button>
+                  </div>
+                </div>
+              </div>
+              <!-- seat items H -->
+              <div class="flex flex-wrap items-center lg:justify-around">
+                <span class="mr-6 pt-4">H</span>
+                <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
+                  <div class="flex ">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">H1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">H2</button>
+                  </div>
+                  <div class="flex">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6">H3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">H4</button>
+                  </div>
+                </div>
+              </div>
+              <!-- seat items I -->
+              <div class="flex flex-wrap items-center lg:justify-around">
+                <span class="mr-8 pt-4">I</span>
+                <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
+                  <div class="flex ">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-8">I1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">I2</button>
+                  </div>
+                  <div class="flex">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6 ml-1">I3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 ml-2">I4</button>
+                  </div>
+                </div>
+              </div>
+              <!-- seat items J -->
+              <div class="flex flex-wrap items-center lg:justify-around">
+                <span class="mr-6 ml-2 pt-4">J</span>
+                <div class="flex flex-wrap items-center gap-3 md:gap-16 mt-4">
+                  <div class="flex ">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-7 ">J1</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">J2</button>
+                  </div>
+                  <div class="flex">
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4 mr-6 ml-2">J3</button>
+                    <button onclick="buttonClick(this)" class="button btn px-11 py-4">J4</button>
                   </div>
                 </div>
               </div>
@@ -279,7 +363,7 @@
               <!-- Calculation section -->
               <div class="bg-secondary-bg p-4 md:p-8 mt-6 rounded-xl">
                 <div class="flex justify-between font-inter font-medium text-[16px] pb-4 border-b border-dashed">
-                  <h3>Seat <span class="bg-primary-bg rounded text-white px-1">0</span></h3>
+                  <h3>Seat <span class="bg-primary-bg rounded text-white px-1" id="selectedCount">0</span></h3>
                   <h3>Class</h3><h3>Price</h3>
                 </div>
                 <br><br>
@@ -388,6 +472,7 @@
   </div>
 </footer>
 
+<script src="JS/select.js"></script>
 <script src="JS/modal.js"></script>
 <script src="JS/coupon.js"></script>
 </body>
