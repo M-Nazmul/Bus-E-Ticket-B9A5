@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Input</title>
+    <style>
+        .coupon-input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .coupon-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .apply-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .coupon-success {
+            display: none;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="coupon-input-container">
+    <input type="text" id="coupon-input" class="coupon-input" placeholder="Enter coupon code">
+    <button id="apply-btn" class="apply-btn">Apply</button>
+    <p id="coupon-success" class="coupon-success">Coupon applied successfully!</p>
+</div>
+
+<script>
+    const couponInput = document.getElementById('coupon-input');
+    const applyBtn = document.getElementById('apply-btn');
+    const couponSuccess = document.getElementById('coupon-success');
+
+    applyBtn.addEventListener('click', () => {
+        const couponCode = couponInput.value.trim();
+
+        // Array of valid coupon codes
+        const validCoupons = ["NEW15", "Couple 20"];
+
+        // Check if the entered coupon code is in the array of valid coupons
+        if (validCoupons.includes(couponCode)) {
+            // Apply the coupon logic here, for now just hide the input and show success message
+            couponInput.style.display = 'none';
+            applyBtn.style.display = 'none';
+            couponSuccess.style.display = 'block';
+        } else {
+            alert('Invalid coupon code. Please try again.');
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -199,7 +199,7 @@
             </div>
           </section>
           <!-- Select seat container -->
-          <section class="border bg-white p-8 rounded-3xl">
+          <section id="ticket-page" class="border bg-white p-8 rounded-3xl">
             <!-- column content -->
             <div class="flex flex-col lg:flex-row gap-4">
                   <!-- Column-1 -->
@@ -294,8 +294,8 @@
                   <div class="relative">
                       <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                       </div>
-                      <input type="text" id="cupon-apply" class="block w-full p-4 ps-2 md:ps-5 text-sm  focus:border-gray-300 rounded-lg bg-white " placeholder="Have any copupon?" required />
-                      <button type="submit" class="text-white absolute end-2.5 bottom-2.5 outline-none border-secondary-bg bg-primary-bg  font-medium rounded-lg text-sm px-4 py-2 ">Apply</button>
+                      <input type="text" id="coupon-input" class=" coupon-input block w-full p-4 ps-2 md:ps-5 text-sm  focus:border-gray-300 rounded-lg bg-white " placeholder="Have any copupon?" required />
+                      <button type="submit" id="apply-btn" class="text-white absolute end-2.5 bottom-2.5 outline-none border-secondary-bg bg-primary-bg  font-medium rounded-lg text-sm px-4 py-2 ">Apply</button>
                   </div>
                 </form>
                 <!-- Customer info section -->
@@ -387,7 +387,8 @@
       </div>
   </div>
 </footer>
-<!-- JavaScript to handle modal functionality -->
+
 <script src="JS/modal.js"></script>
+<script src="JS/coupon.js"></script>
 </body>
 </html>
